@@ -148,9 +148,6 @@ public class Board {
 		if (checkCoordinate(position)) {
 			String player = returnPlayer();
 			makeMove(player, position);
-			if (controlGame(player)) { 
-				System.out.println("El ganador es: " + player);
-			}
 			passTurn();
 			return player;
 		}
