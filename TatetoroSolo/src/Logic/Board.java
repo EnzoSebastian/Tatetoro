@@ -148,6 +148,7 @@ public class Board {
 		if (checkCoordinate(position)) {
 			String player = returnPlayer();
 			makeMove(player, position);
+			controlGame(player);
 			passTurn();
 			return player;
 		}
